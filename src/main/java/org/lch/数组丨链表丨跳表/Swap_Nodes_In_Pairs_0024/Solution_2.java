@@ -1,6 +1,6 @@
 package org.lch.数组丨链表丨跳表.Swap_Nodes_In_Pairs_0024;
 
-import org.lch.数组丨链表丨跳表.ListNode;
+import org.lch.ListNode;
 
 public class Solution_2 {
 

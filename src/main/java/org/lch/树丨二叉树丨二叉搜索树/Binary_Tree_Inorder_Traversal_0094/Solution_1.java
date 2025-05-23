@@ -1,6 +1,6 @@
 package org.lch.树丨二叉树丨二叉搜索树.Binary_Tree_Inorder_Traversal_0094;
 
-import org.lch.树丨二叉树丨二叉搜索树.TreeNode;
+import org.lch.TreeNode;
 
 import java.util.ArrayList;
 import java.util.List;

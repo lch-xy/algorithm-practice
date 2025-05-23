@@ -1,6 +1,6 @@
 package org.lch.数组丨链表丨跳表.Linked_List_Cycle_II_0142;
 
-import org.lch.数组丨链表丨跳表.ListNode;
+import org.lch.ListNode;
 
 /**
  * @Author: LCH

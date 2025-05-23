@@ -1,6 +1,6 @@
 package org.lch.树丨二叉树丨二叉搜索树.Nary_Tree_Preorder_Traversal_0589;
 
-import org.lch.树丨二叉树丨二叉搜索树.Node;
+import org.lch.Node;
 
 import java.util.ArrayDeque;
 import java.util.ArrayList;

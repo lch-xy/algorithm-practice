@@ -1,4 +1,4 @@
-package org.lch.树丨二叉树丨二叉搜索树;
+package org.lch;
 
 public class TreeNode {
 

@@ -1,7 +1,7 @@
 package org.lch.数组丨链表丨跳表.Reverse_Linked_List_0206;
 
 
-import org.lch.数组丨链表丨跳表.ListNode;
+import org.lch.ListNode;
 
 public class Solution_2 {
 

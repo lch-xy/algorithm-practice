@@ -1,6 +1,6 @@
 package org.lch.数组丨链表丨跳表.Linked_List_Cycle_I_0141;
 
-import org.lch.数组丨链表丨跳表.ListNode;
+import org.lch.ListNode;
 
 public class Solution_1 {
 

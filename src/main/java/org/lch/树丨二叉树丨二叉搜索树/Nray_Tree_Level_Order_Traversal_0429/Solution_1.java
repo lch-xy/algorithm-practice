@@ -1,6 +1,6 @@
 package org.lch.树丨二叉树丨二叉搜索树.Nray_Tree_Level_Order_Traversal_0429;
 
-import org.lch.树丨二叉树丨二叉搜索树.Node;
+import org.lch.Node;
 
 import java.util.ArrayDeque;
 import java.util.ArrayList;

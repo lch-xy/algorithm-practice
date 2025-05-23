@@ -1,6 +1,6 @@
 package org.lch.数组丨链表丨跳表.Merge_Two_Sorted_Lists_0021;
 
-import org.lch.数组丨链表丨跳表.ListNode;
+import org.lch.ListNode;
 
 public class Solution_1 {
     public static ListNode mergeTwoLists(ListNode list1, ListNode list2) {

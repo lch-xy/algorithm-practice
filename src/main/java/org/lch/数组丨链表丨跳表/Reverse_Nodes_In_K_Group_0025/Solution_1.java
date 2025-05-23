@@ -1,6 +1,6 @@
 package org.lch.数组丨链表丨跳表.Reverse_Nodes_In_K_Group_0025;
 
-import org.lch.数组丨链表丨跳表.ListNode;
+import org.lch.ListNode;
 
 /**
  * @Author: LCH
