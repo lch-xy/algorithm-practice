@@ -42,38 +42,20 @@ public class Solution_1 {
         Deque<String> deque = new ArrayDeque<>();
         deque.addLast(beginWord);
         distance.put(beginWord, 0);
-        boolean foundEnd = false;
 
-        while (!deque.isEmpty() && !foundEnd) {
-            int size = deque.size();
-            Set<String> visitedThisLevel = new HashSet<>(); // ✅ 每一层临时 visited 集合
-
-            for (int i = 0; i < size; i++) {
-                String word = deque.pollFirst();
-                int curDist = distance.get(word);
-
-                for (String nextWord : getNextWords(word, wordSet)) {
-                    graph.computeIfAbsent(word, k -> new ArrayList<>()).add(nextWord);
-
-                    // ✅ 本轮允许访问，但下轮统一更新到 distance
-                    if (!distance.containsKey(nextWord)) {
-                        visitedThisLevel.add(nextWord);
-                        deque.addLast(nextWord);
-                    }
-
-                    if (nextWord.equals(endWord)) {
-                        foundEnd = true; // 找到 end，停止下一轮扩展
-                    }
+        while (!deque.isEmpty()) {
+            String word = deque.pollFirst();
+            int curDist = distance.get(word);
+            for (String nextWord : getNextWords(word, wordSet)) {
+                graph.computeIfAbsent(word, k -> new ArrayList<>()).add(nextWord);
+                if (!distance.containsKey(nextWord)) {
+                    distance.put(nextWord, curDist + 1);
+                    if (nextWord.equals(endWord)) continue;
+                    deque.addLast(nextWord);
                 }
-            }
-
-            // ✅ 本层访问的 nextWords 统一赋予 distance
-            for (String word : visitedThisLevel) {
-                distance.put(word, distance.getOrDefault(word, Integer.MAX_VALUE - 1) + 1);
             }
         }
     }
-
 
     // 获取所有只差一个字母的单词
     private static List<String> getNextWords(String word, Set<String> dict) {
