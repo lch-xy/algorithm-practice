@@ -1,4 +1,4 @@
-package org.lch.贪心算法.Best_Time_TO_Buy_And_Sell_Stock_II_0122;
+package org.lch.贪心算法.Best_Time_To_Buy_And_Sell_Stock_II_0122;
 
 public class Solution_2 {
 
