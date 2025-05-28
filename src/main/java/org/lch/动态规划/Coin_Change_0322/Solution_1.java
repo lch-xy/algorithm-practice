@@ -10,6 +10,7 @@ public class Solution_1 {
         int[] dp = new int[amount+1];
         Arrays.fill(dp,amount+1);
         dp[0] = 0;
+        // 这里对顺序不敏感 所以可以这么写 如果是组合数 那么coins一定得在外层
         for (int i = 1; i <= amount; i++) {
             for (int coin : coins) {
                 if (i >= coin){
