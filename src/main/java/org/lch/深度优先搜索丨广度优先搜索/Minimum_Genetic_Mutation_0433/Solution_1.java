@@ -9,6 +9,7 @@ import java.util.HashSet;
 public class Solution_1 {
 
 
+    // 从startGene开始，每次替换一个字母，去set里看下是否存在，存在就继续向下处理，不存在就还原
     public int minMutation(String startGene, String endGene, String[] bank) {
         HashSet<String> bankSet = new HashSet<>(Arrays.asList(bank));
         if (!bankSet.contains(endGene)){
