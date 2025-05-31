@@ -35,7 +35,7 @@ public class UnionFind {
         if (rootX == rootY){
             return;
         }
-        // 小树挂到大树下
+        // 小树挂到大树下 高度不会变
         if (size[rootX] < size[rootY]){
             parent[rootX] = rootY;
             size[rootY] += size[rootX];
@@ -48,5 +48,9 @@ public class UnionFind {
 
     public boolean isConnected(int x, int y){
         return find(x) == find(y);
+    }
+
+    public int count() {
+        return count;
     }
 }
